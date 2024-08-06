@@ -59,16 +59,48 @@ public class Vector_01 {
 		
 		System.out.println();
 		
-		Object obj;
-			obj =v3.get(0);
-			System.out.println(obj);
+//		Object obj;
+//			obj =v3.get(0);
+//			System.out.println(obj);
+//			
+//			obj = v3.get(3);
+//			System.out.println(obj);
+//			
+//			for(int i=0; i<v3.size(); i++) {
+//				obj=v3.get(i);
+//				System.out.print(obj+", ");
+//				
+//			}
+				
+			Vector<Object> v5 = new Vector<>();
 			
-			obj = v3.get(3);
-			System.out.println(obj);
+			System.out.println(v5.capacity());
+			System.out.println(v5.size());
+			System.out.println(v5.toString());
+			System.out.println();
 			
-			for(int i=0; i<v3.size(); i++) {
-				obj=v3.get(i);
-				System.out.print(obj+", ");
-			}
+			v5.add("a");
+			v5.add("b");
+			v5.add(5);
+			v5.add(6.7);
+			v5.add('p');
+			v5.add(true);
+			v5.add("a");
+			v5.add(5);
+			v5.add(6.7);
+			v5.add(true);
+			
+			System.out.println(v5.capacity());
+			System.out.println(v5.size());
+			System.out.println(v5.toString());
+			System.out.println();
+			
+			v5.add(new Ex(5, 6));
+			System.out.println(v5.capacity());
+			System.out.println(v5.size());
+			System.out.println(v5.toString());
+			System.out.println();
+			
+			
 	}
 }
