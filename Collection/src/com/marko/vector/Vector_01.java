@@ -1,6 +1,6 @@
 package com.marko.vector;
 
-import java.util.*;
+import java.util.Vector;
 
 public class Vector_01 {
 	public static void main(String[] args) {
@@ -99,8 +99,26 @@ public class Vector_01 {
 			System.out.println(v5.capacity());
 			System.out.println(v5.size());
 			System.out.println(v5.toString());
-			System.out.println();
+			System.out.println(); //xerox 223 onword
 			
+			
+			System.out.println(v5);								//[a, b, 5, 6.7, p, true, a, 5, 6.7, true, Ex [x=5, y=6]]
+			System.out.println(v5.contains(5));					//true
+			System.out.println(v5.contains(true));				//true
+			System.out.println(v5.contains("a"));				//true
+			System.out.println(v5.contains("A"));				//false
+			System.out.println(v5.contains(new String("a")));	//true
+			System.out.println(v5.contains(new Ex(5,6))); 		// false (to sol we can override equals method)
+			
+			//after override equlas method
+			/*[a, b, 5, 6.7, p, true, a, 5, 6.7, true, Ex [x=5, y=6]]
+			 *	true
+			 *	true
+			 *	true
+			 *	false
+			 *	true
+			 *	true
+			 * */
 			
 	}
 }
