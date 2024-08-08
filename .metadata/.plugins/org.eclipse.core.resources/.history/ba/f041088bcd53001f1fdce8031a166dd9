@@ -1,7 +1,0 @@
-package com.marko.vector;
-
-public class Vector_01 {
-	public static void main(String[] args) {
-		
-	}
-}

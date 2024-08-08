@@ -1,5 +1,44 @@
 package com.marko.vector;
-
+/*
+ * Q 1) What is the Vector and why Vector ?
+ * Q 2) Synchronized collection ?
+ * Q 3) Ordered Collection ?
+ * Q 4) Implemented data structure ?
+ * Q 5) Default capacity, incremental capacity, load factor ?
+ * Q 6) What type elements are stored ?
+ * Q 7) Is null allowed ?
+ * Q 8) In which order elements are stored ?
+ * Q 9) In which order elements are retrieved ? 
+ * Q10) What are the method called inside collection 
+ * and executed from the adding object class ?
+ * 
+ * 1) ==> The collection vector is a legacy collection available 
+ * 		  from java 1.0version when we want to store multiple objects 
+ * 		  with index in insertion order with thread-safety we must choose vector.
+ * 
+ * 2) ==> Vector is a synchronized collection.
+ * 
+ * 3) ==> Vector is an ordered collection, it maintains insertion order with index.
+ * 
+ * 4) ==> Vector implemented data structure is growable array.
+ * 
+ * 5) ==> Default capacity is:10					if default capacity(dc): 0
+ * 		incremental capacity :double  			   incremental capacity(ic):+1
+ * 
+ * 6) ==> All 4 type of objects are stored [h,h,u,d] = {homogeneous, heterogeneous, unique, duplicate}
+ * 
+ * 7) ==> Null s allowed, multiple time.
+ * 
+ * 8) ==> Insertion order is preserved, add() method calling order.
+ * 
+ * 9) ==> Support random and also sequential access. 
+ * 
+ *10) ==> toString() and equals() method are called and execute from our class or 
+ *		  from java.lang.object class
+ *		- toString() is called is println() method while printing collection
+ *		- equal() is called in contains() and remove() method while searching and
+ *		  removing object from collection
+ */
 import java.util.Vector;
 
 public class Vector_01 {
